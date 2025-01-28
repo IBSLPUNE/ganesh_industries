@@ -241,4 +241,10 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+doc_events = {
+    "Stock Entry": {
+        "on_submit": "ganesh.api.update_op_batch_table"
+
+    }
+}
 
